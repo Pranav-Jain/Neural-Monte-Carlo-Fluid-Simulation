@@ -1,0 +1,15 @@
+opencv_python == 4.8.1.78
+gpytoolbox == 0.2.0
+imageio == 2.31.5
+matplotlib == 3.8.0
+numba == 0.58.1
+numpy <= 1.26.1
+scipy == 1.8.0
+shapely == 2.0.1
+svgpathtools == 1.6.1
+torch == 2.0.1
+tqdm == 4.66.1
+Pillow == 10.2.0
+scikit_learn == 1.4.0
+tensorboardX == 2.6.2.2
+torch_cubic_spline_grids == 0.0.8

@@ -1,0 +1,25 @@
+python main.py elasticity \
+    --tag elasticity3D_bunny2 \
+    --num_hidden_layers 3 \
+    --hidden_features 66 \
+    -sr 20 \
+    -vr 10000 \
+    -T 20 \
+    -g 2 \
+    --dt 0.1 \
+    --max_n_iter 20000 \
+    --lr 1e-4 \
+    --dim 3 \
+    --energy 'arap' 'kinematics' 'collision' 'external' 'volume' \
+    --ratio_volume 1e3 \
+    --ratio_arap 1e2 \
+    --ratio_collide 1e6  \
+    --ratio_kinematics 1e0 \
+    -f_ext_x 0 \
+    -f_ext_y 0 \
+    -f_ext_z ' -1e2' \
+    -T_ext 5 \
+    --plane_height '-2' \
+    --use_mesh 1 \
+    --mesh_path './elasticity/data/bunny.mesh' \
+    --early_stop

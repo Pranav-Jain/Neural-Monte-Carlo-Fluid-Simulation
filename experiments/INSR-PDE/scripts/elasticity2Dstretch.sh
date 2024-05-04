@@ -1,0 +1,16 @@
+python main.py elasticity \
+    --tag elasticity2D_stretch \
+    --num_hidden_layers 3 \
+    --hidden_features 68 \
+    -sr 100 \
+    -vr 100 \
+    -T 1 \
+    -g 1 \
+    --max_n_iter 100000 \
+    --lr 1e-4 \
+    --dim 2 \
+    --energy 'arap' 'constraint' 'constraint_right' 'volume' \
+    --ratio_volume 1e3 \
+    --ratio_arap 1e0 \
+    --ratio_constraint 1e4 \
+    --constraint_right_offset_x 2.0

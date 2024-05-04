@@ -1,0 +1,25 @@
+time python3 ../../src/3d/main.py \
+    --src karman3d \
+    --exp_name k3d_128_2_10000_run2\
+    --ckpt -1 \
+    --lr 1e-5 \
+    --network siren \
+    --nonlinearity sine \
+    --num_hidden_layers 2 \
+    --hidden_features 128 \
+    --dt 0.05 \
+    --time_integration semi_lag \
+    --early_stop \
+    --max_n_iters 10000 \
+    --n_timesteps 500 \
+    --sample random \
+    --sample_resolution 128 \
+    --vis_resolution 80 \
+    --vel_vis_resolution 100 \
+    --wost_resolution 256 \
+    --fps 10 \
+    --bdry_eps 1e-2 \
+    --wost_json ./wost.json \
+    --karman_vel 0.5 \
+    --adv_ref 0 \
+    --reset_wts 1

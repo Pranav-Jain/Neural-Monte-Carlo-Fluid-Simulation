@@ -1,0 +1,49 @@
+time python3 ../../src/2d/main.py \
+    --src taylorgreen \
+    --exp_name taylorgreen\
+    --ckpt -1 \
+    --lr 1e-5 \
+    --network siren \
+    --nonlinearity sine \
+    --num_hidden_layers 6 \
+    --hidden_features 64 \
+    --dt 0.001 \
+    --time_integration semi_lag \
+    --early_stop \
+    --max_n_iters 10000 \
+    --n_timesteps 100 \
+    --sample random \
+    --sample_resolution 64 \
+    --vis_resolution 1000 \
+    --vel_vis_resolution 60 \
+    --wost_resolution 512 \
+    --fps 10 \
+    --bdry_eps 1e-3 \
+    --wost_json ./wost.json \
+    --adv_ref 0 \
+    --reset_wts 0
+
+python3 ../../src/2d/move_density.py \
+    --src taylorgreen \
+    --exp_name taylorgreen\
+    --ckpt -1 \
+    --lr 1e-5 \
+    --network siren \
+    --nonlinearity sine \
+    --num_hidden_layers 6 \
+    --hidden_features 64 \
+    --dt 0.001 \
+    --time_integration semi_lag \
+    --early_stop \
+    --max_n_iters 10000 \
+    --n_timesteps 100 \
+    --sample random \
+    --sample_resolution 64 \
+    --vis_resolution 1000 \
+    --vel_vis_resolution 60 \
+    --wost_resolution 512 \
+    --fps 10 \
+    --bdry_eps 1e-3 \
+    --wost_json ./wost.json \
+    --adv_ref 0 \
+    --reset_wts 0

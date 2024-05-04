@@ -1,0 +1,8 @@
+matplotlib==3.6.2
+numpy==1.23.3
+Pillow==9.2.0
+scipy==1.9.3
+tensorboardX==2.5.1
+torch==1.12.1+cu113
+tqdm==4.64.1
+typing_extensions==4.4.0

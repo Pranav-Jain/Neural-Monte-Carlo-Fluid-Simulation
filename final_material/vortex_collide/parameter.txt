@@ -1,0 +1,2 @@
+number of layer: 5
+size of layer: 64

@@ -1,0 +1,33 @@
+{
+	"solverType": "wost",
+	"solver": {
+		"nWalks": 500,
+		"maxWalkLength": 10000,
+		"epsilonShell": 1e-3,
+		"minStarShapedRadius": 1e-3,
+		"ignoreDirichlet": true,
+		"ignoreNeumann": false,
+		"ignoreSource": false,
+		"russianRouletteThreshold": 0.99,
+		"setpsBeforeApplyingTikhonov": 0
+	},
+	"scene": {
+	    "boundary": "./square.obj",
+		"absorptionCoeff": 350,
+		"normalizeDomain": false,
+		"flipOrientation": false,
+		"isDoubleSided": false,
+		"isWatertight": true
+	},
+	"output": {
+		"solutionFile": "./solutions/wost.png",
+		"txtdir": "./solutions/",
+		"gridRes": 300,
+		"boundaryDistanceMask": 1e-3,
+		"saveDebug": true,
+		"saveColormapped": true,
+		"colormap": "viridis",
+		"colormapMinVal": 0.0,
+		"colormapMaxVal": 1.0
+	}
+}

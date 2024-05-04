@@ -1,0 +1,49 @@
+time python3 ../../src/3d/main.py \
+    --src vortex_collide \
+    --exp_name vortex_collide\
+    --ckpt -1 \
+    --lr 1e-5 \
+    --network siren \
+    --nonlinearity sine \
+    --num_hidden_layers 5 \
+    --hidden_features 64 \
+    --dt 0.05 \
+    --time_integration semi_lag \
+    --early_stop \
+    --max_n_iters 10000 \
+    --n_timesteps 200 \
+    --sample random \
+    --sample_resolution 128 \
+    --vis_resolution 80 \
+    --vel_vis_resolution 100 \
+    --wost_resolution 256 \
+    --fps 10 \
+    --bdry_eps 1e-2 \
+    --wost_json ./wost.json \
+    --adv_ref 0 \
+    --reset_wts 1
+
+time python3 ../../src/3d/move_density.py \
+    --src vortex_collide \
+    --exp_name vortex_collide\
+    --ckpt -1 \
+    --lr 1e-5 \
+    --network siren \
+    --nonlinearity sine \
+    --num_hidden_layers 5 \
+    --hidden_features 64 \
+    --dt 0.05 \
+    --time_integration semi_lag \
+    --early_stop \
+    --max_n_iters 10000 \
+    --n_timesteps 200 \
+    --sample random \
+    --sample_resolution 128 \
+    --vis_resolution 80 \
+    --vel_vis_resolution 100 \
+    --wost_resolution 256 \
+    --fps 10 \
+    --bdry_eps 1e-2 \
+    --wost_json ./wost.json \
+    --adv_ref 0 \
+    --reset_wts 1
