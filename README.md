@@ -19,7 +19,7 @@ This is the official code for Neural Monte Carlo Fluid Simulation by Pranav Jain
 This code is tested on _x64 linux_ platform using _Python 3.10.12_.
 First clone the repository using
 ```sh
-git clone --recurse-submodules https://github.com/Pranav-Jain/fluid_insr_wost.git
+git clone https://github.com/Pranav-Jain/Neural-Monte-Carlo-Fluid-Simulation.git
 ```
 Install all packages from requirements.txt into a clean Python environment. Use the following command to do that:
 ```sh
